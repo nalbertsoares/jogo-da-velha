@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>JOGO DA VELHA</h1>
+        <hr>
+        <div class="game">
+            <button data-i="1" onclick="audio.play();"></button>
+            <button data-i="2" onclick="audio.play();"></button>
+            <button data-i="3" onclick="audio.play();"></button>
+            <button data-i="4" onclick="audio.play();"></button>
+            <button data-i="5" onclick="audio.play();"></button>
+            <button data-i="6" onclick="audio.play();"></button>
+            <button data-i="7" onclick="audio.play();"></button>
+            <button data-i="8" onclick="audio.play();"></button>
+            <button data-i="9" onclick="audio.play();"></button>
+        </div>
+        <br>
+        <h3 class="currentPlayer"></h3>
+    </main>
+    <audio autoplay loop>
+        <source src="musica-fundo.mp3" type="">
+    </audio>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        swal({
+            title: "Olá Giovanninha!",
+            text: "Seja bem vinda ao seu jogo da velha, chame uma amiguinha pra jogar e divirtam-se!",
+        });
+    </script>
+</body>
+</html>
